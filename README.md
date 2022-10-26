@@ -1,13 +1,12 @@
 # Fast, easy publishing to NPM
 
-[![Cross-Platform Compatibility](https://jstools.dev/img/badges/os-badges.svg)](https://github.com/JS-DevTools/npm-publish/actions)
+[![Cross-Platform Compatibility](https://jstools.dev/img/badges/os-badges.svg)](https://github.com/bluecargo/npm-publish/actions)
 [![Build Status](https://github.com/bluecargo/npm-publish/workflows/CI-CD/badge.svg)](https://github.com/bluecargo/npm-publish/actions)
 
-[![Coverage Status](https://coveralls.io/repos/github/JS-DevTools/npm-publish/badge.svg?branch=master)](https://coveralls.io/github/JS-DevTools/npm-publish)
-[![Dependencies](https://david-dm.org/JS-DevTools/npm-publish/status.svg)](https://david-dm.org/JS-DevTools/npm-publish)
+[![Coverage Status](https://coveralls.io/repos/github/bluecargo/npm-publish/badge.svg?branch=master)](https://coveralls.io/github/bluecargo/npm-publish)
 
-[![npm](https://img.shields.io/npm/v/@jsdevtools/npm-publish.svg)](https://www.npmjs.com/package/@jsdevtools/npm-publish)
-[![License](https://img.shields.io/npm/l/@jsdevtools/npm-publish.svg)](LICENSE)
+[![npm](https://img.shields.io/npm/v/@bluecargo/npm-publish.svg)](https://www.npmjs.com/package/@bluecargo/npm-publish)
+[![License](https://img.shields.io/npm/l/@bluecargo/npm-publish.svg)](LICENSE)
 [![Buy us a tree](https://img.shields.io/badge/Treeware-%F0%9F%8C%B3-lightgreen)](https://plant.treeware.earth/JS-DevTools/npm-publish)
 
 ## Features
@@ -51,10 +50,10 @@ jobs:
       - uses: actions/checkout@v3
       - uses: actions/setup-node@v3
         with:
-          node-version: 12
+          node-version: 16
       - run: npm install
       - run: npm test
-      - uses: bluecargo/npm-publish@v2
+      - uses: bluecargo/npm-publish-v2@v2
         with:
           token: ${{ secrets.NPM_TOKEN }}
 ```
